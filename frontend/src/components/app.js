@@ -1,8 +1,16 @@
-import Banner from './banner'
+import Banner from './banner';
+import AmiiboList from './amiiboList';
 
 function App() {
   return (
-    <Banner />
+    <>
+      <div>
+        <Banner />
+      </div>
+      <div>
+        <AmiiboList />
+      </div>
+    </>
   );
 }
 

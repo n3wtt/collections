@@ -1,10 +1,7 @@
 const Banner = () => {
     return (
         <>
-            <img src="./resources/newt.png" />
-            <div>
-                Hello
-            </div>
+            <img class="p-3 w-25 col-md-4" src="./resources/newt.png" />
         </>
         
     );
