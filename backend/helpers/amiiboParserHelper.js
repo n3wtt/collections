@@ -3,7 +3,7 @@
 const generateAmiiboJSON = (body) => {
     var amiibos = json2array(body.amiibos);
     var parsed_amiibos = amiibos.map((x) => parseData(x));
-    console.log(parsed_amiibos);
+    return(parsed_amiibos);
 }
 
 

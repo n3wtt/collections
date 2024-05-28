@@ -1,24 +1,21 @@
 import '../style/amiiboItem.css';
 
-const amiiboItem = (props) => {
-    console.log("Item");
-    console.log(props);
+const amiiboItem = ({amiiboItem}) => {
 
     const Item = {
         'name': 'Sora',
         "imageLocation": './resources/sora.avif',
         'owned': false
     }
-
-    const amiiboItem = props.amiiboItem;
+    console.log(`./resources/photos/images${amiiboItem.img_source}`);
 
     return (
         <>
             <div class="col amiibo-item col-4">
                 <a href="#">
-                    <img class="img-responsive size" style={{border: amiiboItem.isOwned ? '5px solid green' : '5px solid red',}} src={amiiboItem.imageLocation} />
-                    <div class="caption center-block" style = {{backgroundColor: amiiboItem.isOwned ? 'green' : 'red',}}>
-                        {amiiboItem.amiiboName}
+                    <img className="img-responsive size" style={{border: amiiboItem.isOwned ? '5px solid green' : '5px solid red',}} src={`./resources/photos/images/${amiiboItem.img_source}`} />
+                    <div className="caption center-block" style = {{backgroundColor: amiiboItem.isOwned ? 'green' : 'red',}}>
+                        {amiiboItem.name}
                     </div>
                 </a>
             </div>
